@@ -12,13 +12,6 @@ public class Main {
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
 
-        System.out.println("800");
-
-
-        System.out.println("500000");
-        System.out.println("500000");
-        System.out.println("500000");
-        System.out.println("500000");
 
         // Girilen sayıdan küçük en yakın sayıyı bulalım
         int kucukEnYakin = -1;
