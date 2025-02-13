@@ -13,7 +13,7 @@ public class Main {
         System.out.println(Arrays.toString(arr));
 
 
-
+        System.out.println("asdasdasdasd");
         // Girilen sayıdan küçük en yakın sayıyı bulalım
         int kucukEnYakin = -1;
         int buyukEnYakin = -1;
