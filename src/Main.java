@@ -12,7 +12,7 @@ public class Main {
         Arrays.sort(arr);
         System.out.println(Arrays.toString(arr));
 
-
+        System.out.println("baba");
 
         // Girilen sayıdan küçük en yakın sayıyı bulalım
         int kucukEnYakin = -1;
