@@ -13,6 +13,9 @@ public class Main {
         System.out.println(Arrays.toString(arr));
 
 
+
+
+
         System.out.println("500");
         // Girilen sayıdan küçük en yakın sayıyı bulalım
         int kucukEnYakin = -1;
