@@ -1,62 +1,42 @@
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
-        // Verilen dizi
-        int[] arr = {15, 12, 788, 1, -1, -778, 2, 0};
-
-        // Girilen sayı
-        int girilenSayi = 5;
-
-        // Diziyi sıralıyoruz
-        Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
-
-        System.out.println("asd");
-
-        // Girilen sayıdan küçük en yakın sayıyı bulalım
-        int kucukEnYakin = -1;
-        int buyukEnYakin = -1;
-
-        // Diziyi tarayarak küçük ve büyük en yakın sayıları bulalım
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < girilenSayi) {
-                kucukEnYakin = arr[i];
-
+    static boolean isFind(int[] arr, int value) {
+        for (int i : arr){
+            if ((i==value)  ){
+                return true;
             }
-            if (arr[i] > girilenSayi) {
-                buyukEnYakin = arr[i];
-                break;
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int[] list = {3,200, 7, 3, 3, 2, 9, 10, 21, 1, 33, 9, 1,12,2,12,6,8,77,998,8,198,199,200,400,200,198};
+        int[] dublicate = new int[list.length];
+
+        int startIndex = 0;
+        for (int i = 0; i < list.length; i++) {
+
+            for (int j = 0; j < list.length; j++) {
+                if ((i != j) && (list[i] == list[j]) && (list[i]%2==0) ) {
+                    if (!isFind(dublicate,list[i])) {
+                        dublicate[startIndex++] = list[i];
+                    }
+
+                    break;
+                }
             }
         }
 
-        // Sonuçları ekrana yazdıralım
-        System.out.println("Girilen Sayı: " + girilenSayi);
-        System.out.println("Girilen sayıdan küçük en yakın sayı: " + kucukEnYakin);
-        System.out.println("Girilen sayıdan büyük en yakın sayı: " + buyukEnYakin);
+       for (int value :dublicate){
+           if (value!=0){
+               System.out.println(value);
+           }
+       }
+
+
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
