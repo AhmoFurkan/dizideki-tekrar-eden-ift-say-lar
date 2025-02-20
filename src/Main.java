@@ -28,11 +28,11 @@ public class Main {
             }
         }
 
-       for (int value :dublicate){
-           if (value!=0){
-               System.out.println(value);
-           }
-       }
+        for (int value :dublicate){
+            if (value!=0){
+                System.out.println(value);
+            }
+        }
 
 
     }
